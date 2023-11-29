@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(img/bg.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.nav-section {
+    background-color: lightskyblue;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid orange;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-family: 'Skranji', sans-serif;
+    line-height: 30px;
+    margin-left: 6%;
+    font-size: 20px;
+    color: white;
+    transition: color 0.5s;
+}
+
+.logo span {
+    color: orange;
+}
+
+.logo:hover {
+    color: orange;
+}
+
+.menu {
+    display: flex;
+    line-height: 70px;
+    margin-right: 6%;
+    z-index: 1000;
+}
+
+.menu ul a {
+    margin-left: 25px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Skranji', sans-serif;
+    color: white;
+    transition: color 0.5s;
+}
+
+.menu ul a:hover {
+    color: orange;
+}
+
+.category{
+	background-color: transparent;
+	border: none;
+	color: white;
+	margin-left: 30px;
+    font-size: 15px;
+    font-weight: bold;
+	text-transform: uppercase;
+	transition: color 0.5s;
+}
+.category:hover{
+	color: orange;
+}
+
+.fa-solid{
+	padding-top: 22px;
+	font-size: 25px;
+	color: white;
+	margin-right: 5%;
+	transition: color 0.5s;
+}
+.fa-solid:hover{
+	color: orange;
+}
+
+.checkbtn {
+    font-size: 30px;
+    line-height: 70px;
+    color: white;
+    margin-right: 7%;
+    display: none;
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+.checkbtn:hover {
+    color: orange;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    .logo {
+        margin-left: 50px;
+    }
+    .main .welcome h1{
+    	font-weight: 500;
+    	font-size: 30px;
+    }
+    .main .welcome p{
+    	padding: 0 100px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+    .logo{
+        margin-left: 7%;
+    }
+    .menu {
+        position: absolute;
+        width: 100%;
+        background-color: #13647a;
+        margin-top: 70px;
+        left: -100%;
+        display: block;
+        text-align: center;
+        line-height: 20px;
+        transition: all .7s;      
+        height: 100vh;
+    }
+
+    .menu ul {
+        margin-top: 20px;
+    }
+    .fa-solid{
+    	position: fixed;
+    	right: 10%;
+    }
+
+    #check:checked ~ .menu {
+        left: 0;
+    }
+
+}
+
+       
+.wrap {
+    max-width: 400px;
+    margin: 150px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+        
+.wrap h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+        
+.login-table {
+    width: 100%;
+}
+        
+.login-table td {
+    padding: 10px;
+}
+        
+.login-table input[type="text"],
+.login-table input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+}
+        
+.login-table input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: orange;
+    color: #fff;
+    border: 2px solid orange;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: background 0.5s;
+}
+        
+.login-table input[type="submit"]:hover {
+    background-color: white;
+    color: orange;
+}
+
+.sign-up{
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    color: black;
+    transition: all 0.5s;
+}
+.sign-up:hover{
+    color: orange;
+    font-weight: bold;
+}
+        h2{
+            margin-bottom: 30px;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 500px;
+            height: 450px;
+            margin: auto;
+            margin-top: 10%;
+            margin-bottom: 10%;
+            font-family: sans-serif;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: orange;
+            color: white;
+            font-size: 20px;
+            padding: 10px;
+            border: 2px solid orange;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.5s;
+        }
+
+        button:hover {
+            background-color: white;
+            color: orange;
+        }
+        a{
+            margin: auto;
+            margin-top: 20px;
+        }
+        .fab{
+            margin: auto;
+        }
